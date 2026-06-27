@@ -1,0 +1,216 @@
+<html lang="en">
+<head>
+     <style>
+#father {
+ background:transparent;
+ font-size: 16px;
+ color: white;
+ text-shadow: 0px 0px 8px #f0badf, 0px 0px 6px #99326e;
+ 
+}
+.baby img {
+width: 100%;
+ height: auto; 
+}
+.flex  {
+height: 88px; /* this is not viable */
+ justify-content: center;
+   align-items: center; 
+     display: flex;
+}
+/* the point is to put them in right position 
+x.right - makes 1 right border
+x.top - makes 1 top border*/
+.x-right {
+  border-right: 1px #c763c7 inset;
+ 
+        
+}
+.x-top {
+  border-top: 1px #c763c7 inset;
+}
+.x-bottom {
+  border-bottom: 1px #c763c7 inset;
+}
+ 
+.x-secretary
+{
+ border-top:  1px #c763c7 inset;
+  border-image: linear-gradient(to right, transparent 50%, #c763c7 50%) 1;
+}
+        #parent {
+
+            display: flex;  
+            justify-content: space-around; 
+            gap: 0px;                 
+    padding: 0px;
+            flex-direction: column;  
+      flex-wrap: wrap;
+             flex-shrink: 0; 
+             justify-content: center;
+               margin: 0 auto; 
+               width: 900px;
+               border:  1px #c763c7 inset;
+              filter: drop-shadow(0px 0px 24px #a166a1); 
+               background-image: linear-gradient(to bottom, #ff69c0, #e95db3 3%, #d8bed6 98%);
+        }
+.small
+        {
+font-size: 20px;
+background: #f1b6ee;
+color: #5a3553;
+text-shadow: 0px 0px 2px #da7cd0;
+        }
+        .mother
+        {
+display: flex;
+width: 100%; 
+        }
+#yourpeace
+{
+flex-direction: column;  
+display: flex;
+
+}
+#roundob {
+
+     display: flex;
+  flex-direction: row;     
+  justify-content: center;
+}
+        
+        #orderz1,  #orderz2,  #orderz3,  #orderz4,  #orderz5
+        {
+             display: flex;  
+    flex-direction: row;  
+    flex-wrap: wrap;
+        }
+
+        .baby 
+        {
+ text-align: center;
+  align-items: center; 
+   object-fit: contain; 
+   box-sizing: border-box; 
+        }
+
+         #tbtn + .baby {
+border-left: 1px #c763c7 inset;
+        }
+ 
+
+         .baby + .baby {
+
+          border-left: 0px;
+        } 
+
+ #marisaaaa {
+    width: 300px;
+ }
+ #tbtn {
+color: #f8e7ef;
+font-size: 18px;
+    width: 240px;
+    height: 100px;
+   background: #f1dfe7;
+ background-image: url("touhouliferoulette.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+   background-position: center;
+   border:  2px #580b1e solid;
+ }
+ #tbtn:disabled 
+ {
+color: white;
+  opacity: 0.6; 
+ }
+
+ #tbtn:disabled::after {
+    content: "Loading."; 
+    font-size: 16px;            /* Reset font size back to normal for your new text */
+    color: #fffeff;
+    font-weight: bold;
+    font-size: 25px;
+ 
+}
+
+.imgdead {
+  cursor: not-allowed;     
+    pointer-events: none;
+    color: #9c6482 !important;  
+}
+/* testing changnig percentage into fractals */
+#papascr {
+background: red;
+ border:  1px #c763c7 inset;
+  background-image: linear-gradient(to bottom, #f7b1da, #f3b6dc 3%, #f55cba);
+ border:  1px #c763c7 inset;
+  filter: drop-shadow(0px 0px 3px #77386f); 
+  font-size:18px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+    position: fixed; 
+    text-shadow: none;
+ }
+
+ 
+ #papascr a {
+color: #a84076;
+text-shadow: 0px 0px 1px #eeeced;
+ }
+
+ 
+ 
+#papascr a:hover, a:visited {
+  color: #884467; /* Browsers usually make this purple by default */
+}
+
+
+     </style>
+    <title>Touhou Life Roulette!</title>
+</head>
+<body>
+
+   <div id="papascr">  <a id="imgdownload" class="imgdead" href="" download=""> <div id="papascr" style="width:140px;height:95px"> Download Image </div>  </a> </div> 
+
+ <div id="father">  
+<div id="parent">  
+ 
+   <div id="orderz1" class="mother">  
+    <button onclick="start2hu()" id="tbtn"  style="width:200px; margin: 0px 300px 8px 45px;"></button>
+  </div>
+ 
+ 
+
+
+    
+        <div id="orderz2" class="mother"> 
+</div>
+
+
+
+  <div id="orderz3" class="mother">  
+</div>
+
+ 
+<div id="orderz4" class="mother">
+ </div> 
+ 
+
+
+  
+<div id="orderz5" class="mother">  
+</div>
+ 
+
+
+    </div>
+    </div>
+    <!-- This line connects your JavaScript file to this page -->
+    <script src="playthat.js"></script>
+
+ 
+     
+</body>
+</html>
